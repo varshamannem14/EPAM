@@ -1,0 +1,11 @@
+Spring core , spring Data JPA , Spring Boot 
+
+@RestContoller , @Contoller
+@RequestParams and @PathVariable 
+types of autowiring ? 
+Setter injection , constructor injection, field injection
+@Component  -  deafualt constructor, @Bean - pramaterized constructor  
+why priavte final Service , is able crate object with out @Autowired
+@RequestBody , @GetMapping , @PostMapping 
+@RequestMapping
+why Spring boot  over spring core 

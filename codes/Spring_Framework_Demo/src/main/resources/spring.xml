@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id = "dev" class = "com.epam.Dev" autowire="byType">
+<!--        <property name="computer" ref="desk1"/>-->
+    </bean>
+
+    <bean id = "computer" class = "com.epam.Laptop" >
+
+    </bean>
+
+    <bean id="computer1" class="com.epam.Desktop" primary="true">
+
+    </bean>
+
+</beans>
+

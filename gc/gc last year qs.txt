@@ -1,0 +1,197 @@
+What is microservice ?
+Feign client , Eureka client , Eureka server discovery
+Load balancer , Server side and client side load balancing , Examples of each
+APIGW
+Centralized logging and Centralized tracing
+Fault tolerance , circuit breaker
+Design patterns used in Microservices
+SAGA pattern , Orchestra and Cherography
+
+https://www.geeksforgeeks.org/difference-between-put-and-patch-request/
+
+Write a Java 8 program to partition a list of strings into two lists based on their length (greater than 3 characters).
+ 
+Print current date and time in Java 8 Date and Time API?
+ 
+ 
+Given an array arr[] of non-negative integers. Each array element represents the maximum length of the jumps that can be made forward from that element. This means if arr[i] = x, then we can jump any distance y such that y ≤ x.
+Find the minimum number of jumps to reach the end of the array starting from the first element. If an element is 0, then you cannot move through that element.
+Note:  Return -1 if you can't reach the end of the array.
+ 
+Examples :
+ 
+Input: arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9}
+Output: 3
+Explanation:First jump from 1st element to 2nd element with value 3. From here we jump to 5th element with value 9, and from here we will jump to the last.
+Input: arr = {1, 4, 3, 2, 6, 7}
+Output: 2
+Explanation: First we jump from the 1st to 2nd element and then jump to the last element.
+Input: arr = {0, 10, 20}
+Output: -1
+Explanation: We cannot go anywhere from the 1st element.
+ 
+ 
+Given an array arr of n positive integers, your task is to find all the leaders in the array. An element of the array is considered a leader if it is greater than all the elements on its right side or if it is equal to the maximum element on its right side. The rightmost element is always a leader.
+ 
+Examples
+ 
+Input: n = 6, arr[] = {16,17,4,3,5,2}
+Output: 17 5 2
+Explanation: Note that there is nothing greater on the right side of 17, 5 and, 2.
+ 
+Given a string of brackets, the task is to find an index k which decides the number of opening brackets is equal to the number of closing brackets.
+The string must be consists of only opening and closing brackets i.e. ‘(‘ and ‘)’.
+ 
+An equal point is an index such that the number of opening brackets before it is equal to the number of closing brackets from and after.
+ 
+Examples:  
+ 
+ 
+Input: str = “(())))(“
+Output:   4
+Explanation: After index 4, string splits into (()) and ))(. The number of opening brackets in the first part is equal to the number of closing brackets in the second part.
+ 
+ 
+Input: str = “))”
+Output: 2
+Explanation: As after 2nd position i.e. )) and “empty” string will be split into these two parts. So, in this number of opening brackets i.e. 0 in the first part is equal to the number of closing brackets in the second part i.e. also 0.
+
+1)Given a list of person objects (each having a name and age), group the people by age using streams.
+ 
+2)Given a string, find the character that appears the most frequently using streams.
+ 
+input = "abracadabra":    output :'a'
+ 
+3)Given a list of strings, find the longest palindrome using streams.
+ 
+input: "madam", "racecar", "apple", "banana", "civic"    output:"racecar"
+
+https://www.baeldung.com/java-generics-interview-questions#q13-when-would-you-choose-to-use-a-lower-bounded-type-vs-an-upper-bounded-type
+
+The StringBuilder class does not override the equals() method from the Object class.
+This means that calling equals() on StringBuilder objects will perform reference equality (i.e., it checks if the two objects are the same instance in memory).
+Since sb1 and sb2 are two different objects (even though they contain the same string content), sb1.equals(sb2) will return false
+
+11. Why is a string used as a HashMap key in Java?
+Basically, the HashMap object can store key-value pairs. When creating a HashMap object and storing a key-value pair in that object, you will notice that while storing, the hash code of the key will be calculated, and its calculated value will be placed as the resultant hash code of the key. Now, when the key is passed to fetch its value, then the hash code of the key is calculated again, and if it's equal to the value of the hash code initially calculated, the initial value placed as the resultant hash code of the key is retrieved or fetched.
+Let's say we utilized a variable as a key to store data and then changed the value of that variable. In this case, since we have altered the key, the hash code calculated of the current key will not match the hash code at which its value was originally stored. This makes retrieval impossible. String values are immutable, so once they've been created, they can't be changed. As a result, it is recommended to use Strings as HashMap keys.
+12. What is the best way to split a string in Java?
+
+https://www.youtube.com/watch?v=fvPddKyHxpQ&list=PL6n9fhu94yhXcztdLO7i6mdyaegC8CJwR
+
+SKILLS FROM: Java India - Elevate Gold certification
+ 
+OOPs
+Click to leave a comment...
+ 
+ 
+L1
+Abstraction( Interface, Abstract Class)
+Encapsulation(Access modifiers)
+Inheritance(extends , super)
+Polymorphism(overloading,overiding)
+ 
+Java Core
+Click to leave a comment...
+ 
+ 
+L1
+Method Overloading/overriding
+Static Objects
+Exception Handing/Throws/Throwable/Clone
+Hashcode/Comparator/Comparable
+Constructors
+Class and Objects
+String APIs
+Generics
+ 
+Collections
+Click to leave a comment...
+ 
+ 
+L1
+Collections (Stack, Arrays, Iterable, Lists,LinkedList, Sets, Queues, Maps)
+Sorting of Collections
+Difference between one collection to another(ArrayList vs LinkedList).
+ 
+Java 8
+Click to leave a comment...
+ 
+ 
+L1
+Lambda Expressions and Functional Interfaces
+Method reference and constructor reference by :: operator
+Streams API
+Optionals
+ 
+Maven
+Click to leave a comment...
+ 
+Design patterns
+Click to leave a comment...
+ 
+ 
+L1
+Singleton
+Factory
+Builder
+Decorator
+Strategy
+ 
+Design Principles
+Click to leave a comment...
+ 
+ 
+L1
+SOLID
+DRY
+KISS
+YAGNI
+ 
+Clean Code
+Click to leave a comment...
+ 
+JUnit
+Click to leave a comment...
+ 
+Mockito framework
+Click to leave a comment...
+ 
+Java Persistence API
+Click to leave a comment...
+ 
+Relational DB
+Click to leave a comment...
+ 
+Spring Framework
+Click to leave a comment...
+ 
+ 
+L1
+Spring core
+Spring Boot
+Spring REST
+Spring Data JPA
+ 
+Microservices Basics
+Click to leave a comment...
+ 
+ 
+L1
+Service Registry & Discovery
+Feign Client
+Gateway
+Load balancing
+ 
+Git
+Click to leave a comment...
+ 
+Data Structures
+Click to leave a comment...
+ 
+Problem Solving Skills
+Click to leave a comment...
+
+https://youtu.be/vz6vSZRuS2M?si=KMrli5mPoC0dMKaJ
+
+https://www.youtube.com/watch?v=fvPddKyHxpQ&list=PL6n9fhu94yhXcztdLO7i6mdyaegC8CJwR
